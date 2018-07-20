@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/photo-gallery.css">
+    <link rel="icon" type="image/png" href="favicon.png">
+
+    <title>Pink</title>
+</head>
+<body>
+
+    <header class="page-header page-header_mini">
+        <div class="container">
+            <div class="page-header__wrapper page-header__wrapper_mini">
+                <a class="logo" href="index.html">
+                   <picture>
+                        <source
+                            media="(max-width:425px)"
+                            srcset="img/logotype-white-mobile.png"
+                        >
+                        <img
+                            class="logo"
+                            src="img/logotype-white-tablet.png"
+                            alt="pink"
+                        >
+                    </picture>
+                </a>
+                <button class="toggle toggle_open" type="button">
+                    <span class="toggle_open-bar"></span>
+                    <span class="toggle_open-bar"></span>
+                    <span class="toggle_open-bar"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <header class="page-header page-header_full">
+        <nav class="main-nav main-nav__wrapper">
+
+            <button class="toggle toggle_close" type="button"></button>
+
+            <ul class="main-nav__list">
+                <li class="main-nav__item">
+                    <a href="index.html" class="logo">
+                        <picture>
+                            <source
+                                media="(max-width:425px)"
+                                srcset="img/logotype-white-mobile.png"
+                                class="page-header__logo"
+                            >
+                            <source
+                                media="(max-width:768px)"
+                                srcset="img/logotype-white-tablet.png"
+                                class="page-header__logo"
+                            >
+                            <img
+                                class="logo"
+                                src="img/logotype-white-desktop.png"
+                                alt="Pink"
+                            >
+                        </picture>
+                    </a>
+                </li>
+                <li class="main-nav__item">
+                    <a class="main-nav__link" href="index.html">Главная</a>
+                </li>
+                <li class="main-nav__item">
+                    <a class="main-nav__link main-nav__link_active">Фотографии</a>
+                </li>
+                <li class="main-nav__item">
+                    <a class="main-nav__link" href="form.html">Конкурс</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="page-title page-title-inner">
+
+        <h1 class="page-title__heading page-title-inner__heading">
+            Фотографии пользователей
+        </h1>
+
+    </section>
+
+    <main class="main-page container">
+
+        <section class="gallery">
+
+            <h2 class="gallery__heading">
+                Взгляните на фотографии, которые
+                выкладывают пользователи!
+                Видите, как не хватает ваших?
+            </h2>
+
+            <h3 class="gallery__title">Панорама дня</h3>
+
+            <picture>
+                <source media="(max-width:768px)" srcset="img/panorama-tablet.jpg">
+                <source media="(max-width:425px)" srcset="img/panorama-mobile.jpg">
+                <img
+                    class="gallery__main-photo"
+                    src="img/panorama-desktop.jpg"
+                    alt="Панорама"
+                    width="100%"
+                >
+            </picture>
+
+            <article class="gallery-item gallery-item_main">
+
+                <div class="gallery__items-wrapper">
+
+                    <p class="gallery-item__text">
+                        <b class="gallery-item__user-name">Анна</b>
+                        <span class="gallery-item__post-time">(5 минут назад)</span>
+                    </p>
+
+                    <p class="gallery-item__text">
+                        Прыгать или нет?
+                        Напишите в коментарии свой совет
+                        и смотрите прямую трансляцию в
+                        перископе, задавайте свои вопросы!
+                    </p>
+
+                    <div class="like-block like-block_main">
+                        <p>
+                            <span class="like-block__text">Нравится:</span>
+                            <span class="like-block__like-number">215</span>
+                            <button class="like-block__btn like-block__btn_main"></button>
+                        </p>
+                    </div>
+                </div>
+            </article>
+
+            <div class="gallery__items">
+
+                <article class="gallery-item">
+
+                    <picture>
+                        <source media="(max-width:425px)" srcset="img/photo-1-mobile.jpg">
+                        <source media="(max-width:768px)" srcset="img/photo-1-tablet.jpg">
+                        <img
+                            class="gallery-item__photo"
+                            src="img/photo-1-desktop.jpg"
+                            alt="Фото"
+                            width="100%"
+                        >
+                    </picture>
+
+                    <div class="gallery__items-wrapper">
+                        <p class="gallery-item__text">
+                            <b class="gallery-item__user-name">Левон</b>
+                            <span class="gallery-item__post-time">(5 часов назад)</span>
+                        </p>
+                        <p class="gallery-item__text">
+                            Вчера он на луну летал, сегодня в руки к нам попал.
+                        </p>
+                    </div>
+
+                    <div class="like-block">
+                        <p>
+                            <span class="like-block__text">Нравится:</span>
+                            <span class="like-block__like-number">356</span>
+                            <button class="like-block__btn"></button>
+                        </p>
+                    </div>
+                </article>
+
+                <article class="gallery-item">
+
+                    <picture>
+                        <source media="(max-width:425px)" srcset="img/photo-2-mobile.jpg">
+                        <source media="(max-width:768px)" srcset="img/photo-2-tablet.jpg">
+                        <img
+                            class="gallery-item__photo"
+                            src="img/photo-2-desktop.jpg"
+                            alt="Фото"
+                            width="100%"
+                        >
+                    </picture>
+
+                    <div class="gallery__items-wrapper">
+                        <p class="gallery-item__text">
+                            <b class="gallery-item__user-name">Антон</b>
+                            <span class="gallery-item__post-time">(12 часов назад)</span>
+                        </p>
+                        <p class="gallery-item__text">Купил новые барабаны!!!
+                            Соседи будут рады!
+                        </p>
+                    </div>
+
+                    <div class="like-block">
+                        <p>
+                            <span class="like-block__text">Нравится:</span>
+                            <span class="like-block__like-number">666</span>
+                            <button class="like-block__btn"></button>
+                        </p>
+                    </div>
+
+                </article>
+
+                <article class="gallery-item">
+
+                    <picture>
+                        <source media="(max-width:425px)" srcset="img/photo-3-mobile.jpg">
+                        <source media="(max-width:768px)" srcset="img/photo-3-tablet.jpg">
+                        <img
+                            class="gallery-item__photo"
+                            src="img/photo-3-desktop.jpg"
+                            alt="Фото"
+                            width="100%"
+                        >
+                    </picture>
+
+                    <div class="gallery__items-wrapper">
+                        <p class="gallery-item__text">
+                            <b class="gallery-item__user-name">Борис</b>
+                            <span class="gallery-item__post-time">(20 часов назад)</span>
+                        </p>
+                        <p class="gallery-item__text">
+                           Здесь могла бы быть ваша цитата о высоком и вечном.
+                        </p>
+                    </div>
+
+                    <div class="like-block">
+                        <p>
+                            <span class="like-block__text">Нравится:</span>
+                            <span class="like-block__like-number">215</span>
+                            <button class="like-block__btn"></button>
+                        </p>
+                    </div>
+
+                </article>
+
+                <article class="gallery-item">
+
+                    <picture>
+                        <source media="(max-width:425px)" srcset="img/photo-4-mobile.jpg">
+                        <source media="(max-width:768px)" srcset="img/photo-4-tablet.jpg">
+                        <img
+                            class="gallery-item__photo"
+                            src="img/photo-4-desktop.jpg"
+                            alt="Фото"
+                            width="100%"
+                        >
+                    </picture>
+
+                    <div class="gallery__items-wrapper">
+                        <p class="gallery-item__text">
+                            <b class="gallery-item__user-name">Сергей</b>
+                            <span class="gallery-item__post-time">(25 часов назад)</span>
+                        </p>
+                        <p class="gallery-item__text">Самая кубанская в мире! Будем пить пиво и танцевать!!</p>
+                    </div>
+
+                    <div class="like-block">
+                        <p>
+                            <span class="like-block__text">Нравится:</span>
+                            <span class="like-block__like-number">4</span>
+                            <button class="like-block__btn"></button>
+                        </p>
+                    </div>
+
+                </article>
+
+                <article class="gallery-item">
+
+                    <picture>
+                        <source media="(max-width:425px)" srcset="img/photo-5-mobile.jpg">
+                        <source media="(max-width:768px)" srcset="img/photo-5-tablet.jpg">
+
+                        <img
+                            class="gallery-item__photo"
+                            src="img/photo-5-desktop.jpg"
+                            alt="Фото"
+                            width="100%"
+                        >
+                    </picture>
+
+                    <div class="gallery__items-wrapper">
+                        <p class="gallery-item__text">
+                            <b class="gallery-item__user-name">Максим</b>
+                            <span class="gallery-item__post-time">(40 часов назад)</span>
+                        </p>
+                        <p class="gallery-item__text">
+                            На улице холодно, пар изо рта!Где снег-то?
+                        </p>
+                    </div>
+
+                    <div class="like-block">
+                        <p>
+                            <span class="like-block__text">Нравится:</span>
+                            <span class="like-block__like-number">150</span>
+                            <button class="like-block__btn"></button>
+                        </p>
+                    </div>
+
+                </article>
+
+                <article class="gallery-item">
+
+                    <picture>
+                        <source media="(max-width:425px)" srcset="img/photo-6-mobile.jpg">
+                        <source media="(max-width:768px)" srcset="img/photo-6-tablet.jpg">
+
+                        <img
+                            class="gallery-item__photo"
+                            src="img/photo-6-desktop.jpg"
+                            alt="Фото"
+                            width="100%"
+                        >
+                    </picture>
+
+                    <div class="gallery__items-wrapper">
+                        <p class="gallery-item__text">
+                            <b class="gallery-item__user-name">Надежда</b>
+                            <span class="gallery-item__post-time">(45 часов назад)</span>
+                        </p>
+                        <p class="gallery-item__text">Всем GM и взаимные лайки! Летим отдыхать на Бали!</p>
+                    </div>
+
+                    <div class="like-block">
+                        <p>
+                            <span class="like-block__text">Нравится:</span>
+                            <span class="like-block__like-number">2650</span>
+                            <button class="like-block__btn"></button>
+                        </p>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="photo-editor">
+
+
+                <h2 class="gallery__heading gallery__heading_photo-editor">
+                    Затмите всех!<br> Выкладывайте все, что накопилось в телефоне!
+                </h2>
+
+
+            <div class="photo-editor__block">
+
+                <div class="photo-editor__user-photo">
+                    <img
+                        class="photo-editor__photo"
+                        src="img/photo-7-mobile.jpg"
+                        alt="Фото"
+                    >
+                </div>
+
+                <div class="range-filter">
+
+                    <div class="range-filter__block">
+
+                        <button class="photo-editor__icon photo-editor__icon_crop"></button>
+
+                        <div
+                            class="range-filter__control
+                            photo-editor__range-filter-control
+                            photo-editor__range-filter-control_crop">
+                        </div>
+
+                        <div class="range-filter__scale"></div>
+
+                    </div>
+
+                    <div class="range-filter__block">
+
+                        <button class="photo-editor__icon photo-editor__icon_fill"></button>
+
+                        <div
+                            class="range-filter__control
+                            photo-editor__range-filter-control
+                            photo-editor__range-filter-control_fill">
+                        </div>
+
+                        <div class="range-filter__scale"></div>
+
+                    </div>
+
+                    <div class="range-filter__block">
+
+                        <button class="photo-editor__icon photo-editor__icon_contrast"></button>
+
+                        <div
+                            class="range-filter__control
+                            photo-editor__range-filter-control
+                            photo-editor__range-filter-control_contrast">
+                        </div>
+
+                        <div class="range-filter__scale"></div>
+
+                    </div>
+
+                    <div class="photo-editor__btn-block">
+                        <button class="btn photo-editor__btn" type="submit">
+                                Запостить
+                        </button>
+                        <button
+                            class="btn photo-editor__btn photo-editor__btn_unavailable"
+                            type="submit"
+                        >
+                                Отмена
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="page-footer">
+        <div class="container">
+
+            <div class="page-footer__wrapper">
+                <a href="index.html" class="logo">
+                  <img src="img/logotype-black-desktop.png" alt="Pink">
+                </a>
+
+                <div class="social-btn-block">
+                    <a href="#" class="social-btn social-btn_twitter"></a>
+                    <a href="#" class="social-btn social-btn_facebook"></a>
+                    <a href="#" class="social-btn social-btn_youtube"></a>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/main-nav.js"></script>
+    <script src="js/like-block.js"></script>
+</body>
+</html>
